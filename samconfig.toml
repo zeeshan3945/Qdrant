@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "Qdrant-App-Docker"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-68f2il9oko9h"
+s3_prefix = "Qdrant-App-Docker"
+region = "us-west-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = ["InferenceFunction=159202760617.dkr.ecr.us-west-2.amazonaws.com/qdrantapp59126185/inferencefunction7c73919drepo"]
